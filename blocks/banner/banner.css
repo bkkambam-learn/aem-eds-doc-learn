@@ -1,0 +1,99 @@
+.banner.block {
+  margin: 40px 16px;
+  background: white;
+}
+
+.banner .banner-container {
+  position: relative;
+  width: 343px;
+  height: 136px;
+  border-radius: 8px;
+  background-color: #F7F7F7;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.banner .banner-title {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #000;
+  margin: 0;
+  margin-top: 34px;
+  max-width: 146px;
+}
+
+.banner .banner-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: auto;
+  align-self: center;
+}
+
+.banner .banner-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(0 0 0 / 20%);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner .banner-dot.active {
+  background-color: rgb(0 0 0 / 80%);
+}
+
+.banner .banner-dot:hover {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+/* Mobile responsive */
+@media (width <= 768px) {
+  .banner.block {
+    margin: 20px 16px;
+  }
+  
+  .banner .banner-container {
+    width: 100%;
+    max-width: 343px;
+    height: 120px;
+    padding: 16px;
+  }
+  
+  .banner .banner-title {
+    font-size: 18px;
+    margin-top: 20px;
+    max-width: 140px;
+  }
+}
+
+/* Desktop responsive */
+@media (width >= 1024px) {
+  .banner.block {
+    margin: 40px auto;
+    max-width: 1200px;
+  }
+  
+  .banner .banner-container {
+    width: 100%;
+    max-width: 500px;
+    height: 160px;
+    margin: 0 auto;
+  }
+  
+  .banner .banner-title {
+    font-size: 22px;
+    max-width: 200px;
+  }
+}
